@@ -1,0 +1,50 @@
+{
+  "name": "dsh-workspace-vault",
+  "version": "0.1.0",
+  "description": "工作区置顶 + 任务置顶 + 密码隐藏空间 + 工作区加密（访问锁），隐藏空间不参与云同步。",
+  "type": "module",
+  "license": "MIT",
+  "author": "ColdRainLab",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColdRainLab/dsh-workspace-vault.git"
+  },
+  "homepage": "https://github.com/ColdRainLab/dsh-workspace-vault#readme",
+  "bugs": {
+    "url": "https://github.com/ColdRainLab/dsh-workspace-vault/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness"
+  ],
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "dsh.plugin.json",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "dsh-workspace-vault",
+  "description": "工作区置顶 + 任务置顶 + 密码隐藏空间 + 工作区加密（访问锁），隐藏空间不参与云同步。",
+  "version": "0.1.0",
+  "entry": {
+    "name": "dsh-workspace-vault",
+    "inject": [
+      "webServer",
+      "workspaceRegistry"
+    ]
+  },
+  "client": {
+    "platform": "web"
+  }
+}
