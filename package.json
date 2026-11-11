@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "dsh-workspace-vault",
   "version": "0.1.1",
   "description": "工作区置顶 + 任务置顶 + 密码隐藏空间 + 工作区加密（访问锁），隐藏空间不参与云同步。",
